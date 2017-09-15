@@ -1,0 +1,17 @@
+Pada tutorial kali ini diberikan beberapa latihan yang harus dikerjakan sebelum melakukan tutorial.
+
+Pada page hello.html, latihan 1 menghasilkan error, latihan 2 tetap berjalan, latihan 3 menghasilkan error. Darisini dapat ditarik kesimpulan bahwa pada bagian RequestMapping, apa yang direquest harus sesuai dengan nama page html yang dibuat. Tetapi nama method tidak perlu sama, dan perubahan tidak berpengaruh apa-apa. Sementara itu return statement harus juga nama htmlnya. 
+
+Pada latihan request parameter, latihan 1 menghasilkan selamat datang chanek. latihan 2 menghasilkan selamat datang null, latihan 3 menghasilkan selamat datang dunia. latihan 4, Sapaan untuk user tidak tampil karena saat menggunakan thymeleaf, jika sudah menulis text dalam tag <p> maka yang berikutnya akan dioverride dengan apa yang ada dalam tag.
+
+Pada latihan Path Variable, latihan 1 menghasilkan error, latihan 2 menghasilkan selamat datang chanek. 
+
+Setelah itu saya ditugaskan untuk membuat sebuah laman aplikasi perkalian sederhana. Requirement dari aplikasi yang diminta adalah menampilkan angka pertama, angka kedua, dan hasil perkalian jika memasukkan alamat dengan variabel tertentu (Dalam hal ini "a" dan "b"). 
+
+Tools yang digunakan dalam menyelesaikan tugas ini adalah browser, dan Eclipse sebagai IDE. 
+
+Untuk menyelesaikan masalah, pertama-tama saya membuat laman html dengan nama perkalian.html, setelah itu, pada PageController.java saya menambahkan @RequestMapping baru ke laman perkalian.html lalu membuat sebuah method 'kali' yang meminta dua @RequestParam, untuk variabel 'a' dan variabel 'b' dengan nilai default 0 agar tidak muncul Whitelabel Error. Kemudian saya membuat variabel 'res' dalam method 'kali' untuk mengalikan dua buah variabel yang sudah diminta. Kemudian saya membuat variabel 'res' yang mengalikan kedua buah variabel a dan b. Setelah itu saya menambakan atribut ke model agar bisa dimunculkan ke laman perkalian.html. sebagai return value, saya menggunakan perkalian karena itu nama htmlnya.
+
+Ketika dicoba, ada kendala berupa error karena gagal parsing syntax di html, tetapi hal ini dapat dengan mudah diselesaikan ketika saya membuka Stack Overflow dan mengikuti syntax penulisan th:text yang disediakan di Stack Overflow.
+
+referensi: https://stackoverflow.com/questions/16119421/thymeleaf-concatenation-could-not-parse-as-expression
